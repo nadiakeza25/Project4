@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: .2s linear;
+  
+}
+.home {
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(90deg,rgba(0,110,110,.4),rgba(26, 22, 22, 0.72),rgba(185, 29, 115, 0.5)),url("https://www.usatoday.com/gcdn/presto/2021/10/28/USAT/1bf79c6a-5d88-4e64-b398-c40418a79829-XXX_iStock_000017680551Large.jpg?crop=3953,2224,x0,y0");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.center{
+  overflow-x: hidden;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  text-align: center;
+
+}
+
+
+.btn{
+  font-size: x-large;
+  padding: 20px 40px;
+  background: none;
+  border: 4px solid yellow;
+  color: yellow;
+  margin: 4% 0%;
+}
+.btn:hover{
+  scale: 1.1;
+}
+.catContainer{
+  display: grid;
+  width: 80vw;
+  
+}
+.catContainer img{
+  height: 300px;
+  margin: 1%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.sideNav {
+  display: grid;
+  height: 100%;
+  color: white;
+  /* background-color: rgba(red, green, blue, alpha); */
+}
+.btns_div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btns_cat{
+  background-color: yellow;
+  margin: 2%;
+  width: 10em;
+  border: 2px solid yellow;
+}
+.btns_cat:hover{
+  background-color: inherit;
+  color: yellow;
+}
