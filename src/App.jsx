@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import SearchBar from "./Components/SearchBar";
 
 
 function App() {
@@ -18,30 +19,29 @@ function App() {
   };
   return (
     <div className="home">
+      <SearchBar />
       <div className="center">
         <h1> Discover cats from your wildest dreams!<br></br> </h1>
         <button className="btn" onClick={getImgs}>
           Discover
         </button>
+        <div className = "">
+
+        </div>
       </div>
       <div className="catContainer">
         {catImgs.map(({ url,breeds}) => (
-          <><img src={url}></img>
+          <>
+          <img src={url}></img>
           <div className="search-bar-container">
-          
-          
-            <div> SearchResults </div>
-
-            
             <h1>{breeds[0].id}</h1>
             <div className="btns_div">
               <button className="btns_cat">{breeds[0].name}</button>
                <button className="btns_cat">{breeds[0].origin}</button>
                 <button className="btns_cat">{breeds[0].weight.imperial}</button>
-              
             </div>
-
-          </div></>
+          </div>
+          </>
         ))}
       </div>
     </div>

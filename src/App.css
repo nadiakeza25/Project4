@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   transition: .2s linear;
-  
+
+}
+.navi{
+   backdrop-filter: blur(10px);
 }
 .home {
   overflow-x: hidden;
@@ -11,18 +14,16 @@
   background: linear-gradient(90deg,rgba(0,110,110,.4),rgba(26, 22, 22, 0.72),rgba(185, 29, 115, 0.5)),url("https://www.usatoday.com/gcdn/presto/2021/10/28/USAT/1bf79c6a-5d88-4e64-b398-c40418a79829-XXX_iStock_000017680551Large.jpg?crop=3953,2224,x0,y0");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .center{
   overflow-x: hidden;
-  min-height: 50vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
   color: white;
   text-align: center;
-
 }
 
 
@@ -39,7 +40,9 @@
 }
 .catContainer{
   display: grid;
-  width: 80vw;
+  justify-content: center;
+  width: 100vw;
+  color: white;
   
 }
 .catContainer img{
@@ -67,4 +70,18 @@
 .btns_cat:hover{
   background-color: inherit;
   color: yellow;
+}
+.search_result{
+  width: 100%;
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  top: 5em;
+  backdrop-filter: blur(10px);
+}
+.search_result img{
+  width: 200px;
 }
